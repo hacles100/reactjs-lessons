@@ -1,0 +1,17 @@
+h1 {
+    color: black;
+}
+
+p {
+    color: #585858
+}
+
+.hello-world {
+    border: 1px solid rgb(189, 189, 189);
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 200px;
+    background-color: white;
+}
+
+
