@@ -1,24 +1,25 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 import './App.css';
-import AboutUs from './pages/about/AboutUs';
-import Contact from './pages/contact/Contact';
-import Home from './pages/homepage/Home';
-import Layout from './pages/layout/Layout';
-import NotFound from './pages/not-found/NotFound';
+import All from './pages/all/All';
+import Videos from './pages/videos/Videos';
+import Images from './pages/images/Images';
+import Layout from './pages/layout/Layout'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
 
   return (
+    <div className='App'>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="about-us" element={<AboutUs />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
+        <Route path="/" element={<Layout/>}>
+          <Route index element={<All />} />
+          <Route path="images" element={<Images />} />
+          <Route path="videos" element={<Videos />} />
         </Route>
       </Routes>
     </BrowserRouter>
+    </div>
   );
 }
 
